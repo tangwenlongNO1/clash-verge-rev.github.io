@@ -7,8 +7,8 @@
 <h3 align="center">基于 <a href="https://github.com/tauri-apps/tauri" target="_blank">Tauri</a> 的 Clash Meta GUI
 
 </h3>
-<a href="https://t.me/clash_verge_rev" target="_blank">
-<img src="./assets/icons/telegram.svg" alt="Clash" width="24" style="position: relative;top: 6px;">Telegram 群组:@clash_verge_rev
+<a href="https://t.me/clash_for_win" target="_blank">
+<img src="./assets/icons/telegram.svg" alt="Clash" width="24" style="position: relative;top: 6px;">Telegram 群组:@clash_for_win
 </a>
 
 ## 特性
