@@ -1,8 +1,8 @@
-site_name: Clash Verge Rev Docs
+site_name: Clash Docs
 repo_name: clash-verge-rev
 repo_url: https://github.com/clash-verge-rev/clash-verge-rev
-copyright: Copyright &copy 2023 clash-verge-rev
-edit_uri: https://github.com/clash-verge-rev/clash-verge-rev.github.io/tree/main/docs
+copyright: Copyright &copy 2023 clash
+edit_uri: https://github.com/tangwenlongNO1/clash-verge-rev.github.io/tree/main/docs
 
 # dev服务器监听地址
 dev_addr: 127.0.0.1:7788
@@ -30,6 +30,84 @@ nav:
       - Linux: faq/linux.md
       - 其他问题: faq/other.md
   - 友情链接: friendship.md
+  - 配置:
+    - config/index.md
+    - 语法: config/syntax.md
+    - 全局配置: config/general.md
+    - DNS:
+      - DNS配置: config/dns/index.md
+      - DNS类型: config/dns/type.md
+      - hosts: config/dns/hosts.md
+      - 解析流程: config/dns/diagram.md
+    - 域名嗅探: config/sniff/index.md
+    - 入站:
+      - 代理端口: config/inbound/port.md
+      - Tun: config/inbound/tun.md
+      - listeners:
+        - 通用字段: config/inbound/listeners/index.md
+        - http: config/inbound/listeners/http.md
+        - socks: config/inbound/listeners/socks.md
+        - mixed: config/inbound/listeners/mixed.md
+        - redirect: config/inbound/listeners/redirect.md
+        - tproxy: config/inbound/listeners/tproxy.md
+        - tun: config/inbound/listeners/tun.md
+        - ShadowSocks: config/inbound/listeners/ss.md
+        - VMess: config/inbound/listeners/vmess.md
+        - TUIC v4: config/inbound/listeners/tuic-v4.md
+        - TUIC v5: config/inbound/listeners/tuic-v5.md
+        - Hysteria2: config/inbound/listeners/hysteria2.md
+        - tunnel: config/inbound/listeners/tunnel.md
+    - 出站代理:
+      - 通用字段: config/proxies/index.md
+      - TLS配置: config/proxies/tls.md
+      - 传输层配置: config/proxies/transport.md
+      - dialer-proxy: config/proxies/dialer-proxy.md
+      - sing-mux: config/proxies/sing-mux.md
+      - DIRECT: config/proxies/direct.md
+      - DNS: config/proxies/dns.md
+      - HTTP: config/proxies/http.md
+      - SOCKS: config/proxies/socks.md
+      - Shadowsocks: config/proxies/ss.md
+      - ShadowsocksR: config/proxies/ssr.md
+      - VMess: config/proxies/vmess.md
+      - VLESS: config/proxies/vless.md
+      - Trojan: config/proxies/trojan.md
+      - Hysteria: config/proxies/hysteria.md
+      - Hysteria2: config/proxies/hysteria2.md
+      - TUIC: config/proxies/tuic.md
+      - WireGuard: config/proxies/wg.md
+      - SSH: config/proxies/ssh.md
+    - 代理集合:
+      - 代理集合配置: config/proxy-providers/index.md
+      - 代理集合内容: config/proxy-providers/content.md
+    - 策略组:
+      - 策略组配置: config/proxy-groups/index.md
+      - 手动选择: config/proxy-groups/select.md
+      - 自动选择: config/proxy-groups/url-test.md
+      - 自动回退: config/proxy-groups/fallback.md
+      - 负载均衡: config/proxy-groups/load-balance.md
+      - 链式代理: config/proxy-groups/relay.md
+      - 内置策略: config/proxy-groups/built-in.md
+    - 路由规则: config/rules/index.md
+      # - 域名规则: config/rules/domain.md
+      # - IP规则: config/rules/ip.md
+      # - 端口规则: config/rules/port.md
+      # - 进程规则: config/rules/process.md
+      # - 逻辑规则: config/rules/logic.md
+      # - GEO规则: config/rules/geox.md
+      # - 入站规则: config/rules/in.md
+      # - 网络类型规则: config/rules/network.md
+      # - 引用规则集合: config/rules/rule-set.md
+      # - 引用子规则: config/rules/sub-rule.md
+      # - 最终匹配: config/rules/match.md
+    - 规则集合: 
+      - 规则集合: config/rule-providers/index.md
+      - 规则集合内容: config/rule-providers/content.md
+    - 子规则: config/sub-rule.md
+    - 流量隧道: config/tunnels.md
+    - NTP: config/ntp/index.md
+    - 实验性配置: config/experimental.md
+  - APIs: api/index.md
 
 # 主题设置
 theme:
@@ -101,4 +179,4 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/clash-verge-rev/clash-verge-rev
     - icon: material/file-document
-      link: https://github.com/clash-verge-rev/clash-verge-rev.github.io
+      link: https://github.com/tangwenlongNO1/clash-verge-rev.github.io
