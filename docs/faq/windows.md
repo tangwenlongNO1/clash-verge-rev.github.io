@@ -1,3 +1,26 @@
+## 找不到 VCRUNTIMEXXX.dll，无法继续执行代码
+
+- 问题原因：操作系统缺少 VC 运行环境所需的库。
+- 解决方案：下载并安装 VC 运行库。
+
+=== "x64"
+
+    | 运行库                 | 下载地址                                                                                                                                                                           |
+    | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | `vc_redist.x64.exe` | [vc_redist.x64.exe](https://aka.ms/vs/17/release/vc_redist.x64.exe)               |
+
+=== "x86"
+
+    | 运行库                 | 下载地址                                                                                                                                                                           |
+    | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | `vc_redist.x86.exe` | [vc_redist.x86.exe](https://aka.ms/vs/17/release/vc_redist.x86.exe)               |
+
+=== "arm64"
+
+    | 运行库                 | 下载地址                                                                                                                                                                           |
+    | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | `vc_redist.arm64.exe` | [vc_redist.arm64.exe](https://aka.ms/vs/17/release/vc_redist.arm64.exe)               |
+
 ## 此应用无法在你的电脑上运行
 
 ![can_not_run](../assets/faq/windows/can_not_run.png)
@@ -32,16 +55,20 @@
 
 ## Windows 7 无法使用
 
-问题原因
-
-- Verge 内置的 mihomo 内核使用 go1.21 编译，不支持 Windows 7。
-
 解决方案
 
-- 到 mihomo [Release](https://github.com/MetaCubeX/mihomo/releases/latest) 下载 go1.20 编译的内核（带有 `windows` 和 `go120` 字样）
-- 右键 Verge 托盘图标，打开目录-内核目录，删除其中的`clash-meta.exe`和`clash-meta-alpha.exe`
-- 将下载的内核解压到内核目录，重命名为`clash-meta.exe`和`clash-meta-alpha.exe`
-- 重启 Verge
+借助 [vxiiduu/VxKex](https://github.com/vxiiduu/VxKex) 项目运行，步骤：
+
+- 下载 [Releases](https://github.com/vxiiduu/VxKex/releases) 中的 `KexSetup_Release_x_x_x_xxxx.exe` 并安装。
+
+- 进入 Clash Verge 主程序目录，右键打开下面文件的属性，找到 `VxKex` 选项卡，勾选 `Enable VxKex for this program` 及 `Disable VxKex for child processes` 选项，即可正常运行。
+
+  | 文件清单                          |
+  | --------------------------------- |
+  | Clash Verge.exe                   |
+  | resources\clash-verge-service.exe |
+  | resources\install-service.exe     |
+  | resources\uninstall-service.exe   |
 
 ## 升级，卸载、重装、开启的时候“服务模式”相关报错
 
